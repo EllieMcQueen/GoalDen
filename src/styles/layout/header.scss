@@ -1,0 +1,136 @@
+@import './variables';
+.header-section{
+
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: $text-color;
+    //height: 100vh;
+    .header-main-text{
+        padding: 1px 0px 1px 0px;
+        position: relative;
+
+        .header-text{
+            
+            font-family: Copperplate, Papyrus fantasy;
+            font-size: 2em;
+            font-weight: 200;
+            letter-spacing: .05em;
+            padding: 17px;
+            margin-bottom: 0px;
+            text-align: TOP, center;
+            color: $text-color;
+        }
+        .header-text2{
+            word-spacing: 10px;
+            font-size: 1em;
+            text-align: center;
+        }
+        .header-text3{
+            font-family: Copperplate, Papyrus fantasy;
+            font-size: .85em;
+            text-align: center;
+        }
+        
+        
+    }
+
+    .icon-flex{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    
+        .icon{
+            display: inline-block;
+            justify-content: flex-end;
+            flex-direction: row;
+            margin: 0px 6px 0px 6px;
+            width: 35px;
+            transition-duration: 1s;
+        }
+        .icon:hover{
+            display: inline-block;
+            margin: 0px 6px 0px 6px;
+            transform: scale(2,2);
+        }
+        .icon a{
+            color:$text-color;
+            transition-duration: 1s;
+        }
+        .icon a:hover{
+            color: $off-yellow;
+        }
+    }
+
+   
+}
+h1 span span {
+    position: relative;
+    animation: move-text-color .6s ease-out forwards;
+    bottom: -1em;
+    opacity: 0;
+}
+h1 span span:hover{
+    animation: infinite;
+}
+
+@keyframes move-text-color {
+    0% {
+        bottom: -0.2em;
+        opacity: 1;
+        color: black;
+    }
+    
+    50% {
+        bottom: 0.2em;
+        color: $off-yellow;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+        color: black;
+    }
+}
+
+@media (min-width: $breakpoint-tablet){
+    .header-section{
+
+        .header-main-text{
+            padding: 30px 0px 20px 0px;
+
+            .header-text{
+                font-size: 6em;
+            }
+            .header-text2{
+                font-size: 3em;
+            }
+            .header-text3{
+                font-size: 2em;
+
+            }
+        }
+    }   
+}
+
+@media (min-width: $breakpoint-desktop){
+    .header-section{
+
+        .header-main-text{
+            padding: 30px 0px 20px 0px;
+
+            .header-text{
+                font-size: 6em;
+            }
+            .header-text2{
+                font-size: 3em;
+            }
+            .header-text3{
+                font-size: 2em;
+
+            }
+        }
+    }   
+}
+
+    
