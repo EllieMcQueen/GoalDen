@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const nodeMailerCtrl = require("./nodeMailerController");
+
 const {SERVER_PORT} = process.env;
 
 //FOR req.body
